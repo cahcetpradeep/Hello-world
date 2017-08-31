@@ -6,17 +6,17 @@
 					"wType": "mParentgroup",
 					"field": [{
 							"id": "Deal_name",
-							"maxSize": "30",
+							"maxlen": "30",
 							"wType": "mTextbox",
 							"type": "text"
 						}, {
 							"id": "deal_adres",
-							"maxSize": "30",
+							"maxlen": "30",
 							"wType": "mTextbox",
 							"type": "text"
 						}, {
 							"id": "deal_telep1",
-							"maxSize": "30",
+							"maxlen": "30",
 							"wType": "mTextbox",
 							"type": "text"
 						}, {
