@@ -1,0 +1,470 @@
+{
+	"page": [{
+			"id": "page_det",
+			"field": [{
+					"id": "deal_detls",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "Deal_name",
+							"maxlen": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_adres",
+							"maxlen": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_telep1",
+							"maxlen": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_telep2",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_telep3",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_fax",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "deal_email",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}
+					]
+				}, {
+					"id": "report_no",
+					"maxSize": "30",
+					"wType": "mTextbox",
+					"type": "text"
+				}, {
+					"id": "date",
+					"wType": "mDatebox"
+				}, {
+					"id": "cust_dtls",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "cust_name",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "Cust_adrs",
+							"maxLength": "50",
+							"wType": "mTextarea"
+						}
+					]
+				}, {
+					"id": "prsn_dtls",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "prsn_name",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "prsn_desig",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}
+					]
+				}, {
+					"id": "machine_dt",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "mcn_regn",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "ser_eng_nm",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "mcn_model",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "mcn_serial",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "mcn_d_spld",
+							"wType": "mDatebox"
+						}, {
+							"id": "mcn_d_cmnd",
+							"wType": "mDatebox"
+						}, {
+							"id": "mcn_prd_sr",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "mcn_oano",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}
+					]
+				}, {
+					"id": "ntre_of_se",
+					"textField": "text",
+					"valueField": "value",
+					"wType": "mDropdownlist",
+					"dataSrc": [{
+							"text": "Commissioning",
+							"value": "Commissioning"
+						}, {
+							"text": "Demonstration",
+							"value": "Demonstration"
+						}, {
+							"text": "Inspection",
+							"value": "Inspection"
+						}, {
+							"text": "Repairs",
+							"value": "Repairs"
+						}, {
+							"text": "Product Complaint/Failure",
+							"value": "Product Complaint/Failure"
+						}
+					]
+				}, {
+					"id": "ntre_se_dt",
+					"maxSize": "30",
+					"wType": "mTextbox",
+					"type": "text"
+				}, {
+					"id": "work_done",
+					"maxLength": "50",
+					"wType": "mTextarea"
+				}, {
+					"id": "cust_remk",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "sr_eng_cld",
+							"wType": "mDatebox"
+						}, {
+							"id": "sr_eng_jbf",
+							"wType": "mDatebox"
+						}, {
+							"id": "sr_eng_jbt",
+							"wType": "mDatebox"
+						}, {
+							"id": "wrk_cpld_n",
+							"textField": "text",
+							"valueField": "value",
+							"wType": "mDropdownlist",
+							"dataSrc": [{
+									"text": "Yes",
+									"value": "Yes"
+								}, {
+									"text": "NO",
+									"value": "NO"
+								}
+							]
+						},{
+							"id": "wrk_satisfy",
+							"textField": "text",
+							"valueField": "value",
+							"wType": "mDropdownlist",
+							"dataSrc": [{
+									"text": "Yes",
+									"value": "Yes"
+								}, {
+									"text": "NO",
+									"value": "NO"
+								}
+							]
+						}
+					]
+				}, {
+					"id": "ser_lvd_dy",
+					"wType": "mNumerictextbox"
+				}
+			]
+		}, {
+			"id": "prts_recomm",
+			"field": [{
+					"id": "part_1",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc1",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty1",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_2",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc2",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty2",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_3",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc3",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty3",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_4",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc4",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty4",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_5",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc5",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty5",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_6",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc6",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty6",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_7",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc7",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty7",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_8",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc8",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty8",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_9",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc9",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty9",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_10",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc10",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty10",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_11",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc11",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty11",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_12",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc12",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty12",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_13",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc13",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty13",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_14",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc14",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty14",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_15",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc15",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty15",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_16",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc16",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty16",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_17",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc17",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty17",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_18",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc18",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty18",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_19",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc19",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty19",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "part_20",
+					"wType": "mParentgroup",
+					"field": [{
+							"id": "part_desc20",
+							"maxSize": "30",
+							"wType": "mTextbox",
+							"type": "text"
+						}, {
+							"id": "part_qnty20",
+							"wType": "mNumerictextbox"
+						}
+					]
+				}, {
+					"id": "ser_eng_sg",
+					"wType": "mSignaturepad"
+				}, {
+					"id": "cus_sig",
+					"wType": "mSignaturepad"
+				}
+			]
+		}
+	]
+}
