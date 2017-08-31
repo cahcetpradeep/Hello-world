@@ -13,9 +13,10 @@
 		.labb {
 			font-size : 13px;
 			font-weight : bold;
+		
 		}
 		.vals {
-			font-size : 13px;
+			font-size : 15px;
 		}
 	</Style>
 </head>
