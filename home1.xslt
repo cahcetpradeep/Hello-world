@@ -16,7 +16,7 @@
 		
 		}
 		.vals {
-			font-size : 17px;
+			font-size : 19px;
 		}
 	</Style>
 </head>
