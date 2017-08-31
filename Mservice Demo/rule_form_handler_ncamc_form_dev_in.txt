@@ -1,0 +1,31 @@
+OBJECT_BEGIN [NAME = "screen"]
+	EVENT_BEGIN [NAME = "load"]
+		FIELD_BEGIN [NAME = "form_handler_ncamc_form"]
+			RULE_BEGIN [NAME = "comm rule 1", ORDER = "1"]
+				APPLY [OtherfieldPattern] ON [#form_handler_ncamc_form_report_no,#form_handler_nncamc_form_cust_name,#form_handler_nncamc_form_prsn_name,#form_handler_nncamc_form_prsn_desig,#form_handler_nncamc_form_mcn_regn,#form_handler_nncamc_form_ser_eng_nm,#form_handler_nncamc_form_mcn_model,#form_handler_ncamc_form_mcn_serial,#form_handler_ncamc_form_mcn_prd_sr,#form_handler_ncamc_form_mcn_oano,#form_handler_ncamc_form_ntre_se_dt,#form_handler_ncamc_form_ser_engnam,#form_handler_ncamc_form_part_desc1,#form_handler_ncamc_form_part_desc2,#form_handler_ncamc_form_part_desc3,#form_handler_ncamc_form_part_desc4,#form_handler_ncamc_form_part_desc5,#form_handler_ncamc_form_part_desc6,#form_handler_ncamc_form_part_desc7,#form_handler_ncamc_form_part_desc8,#form_handler_ncamc_form_part_desc09,#form_handler_ncamc_form_part_desc10,#form_handler_ncamc_form_part_desc11,#form_handler_ncamc_form_part_desc12,#form_handler_ncamc_form_part_desc13,#form_handler_ncamc_form_part_desc14,#form_handler_ncamc_form_part_desc15,#form_handler_ncamc_form_part_desc16,#form_handler_ncamc_form_part_desc17,#form_handler_ncamc_form_part_desc18,#form_handler_ncamc_form_part_desc19,#form_handler_ncamc_form_part_desc20];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_date] VALUE [NEWDATE];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_cust_name] VALUE [$my_calls.variable.selectedRecord.customer_name];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_prsn_name] VALUE [$my_calls.variable.selectedRecord.cust_contact_name];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_ser_eng_nm] VALUE [$my_calls.variable.selectedRecord.assigned_to_emp_name];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_mcn_model] VALUE [$my_calls.variable.selectedRecord.equipment_id];
+				APPLY [SetValue] ON [#form_handler_fsr_form_mcn_serial] VALUE [$my_calls.variable.selectedRecord.asset_id];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_sr_eng_cld] VALUE [$my_calls.variable.selectedRecord.created_on_date];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_sr_eng_jbf] VALUE [$my_calls.variable.selectedRecord.act_start_on_date];
+				APPLY [SetValue] ON [#form_handler_ncamc_form_sr_eng_jbt] VALUE [$my_calls.variable.selectedRecord.act_finish_on_date];
+				APPLY [Disable] ON [#form_handler_ncamc_form_deal_telep1,#form_handler_ncamc_form_deal_telep2,#form_handler_ncamc_form_deal_telep3,#form_handler_ncamc_form_deal_fax,#form_handler_ncamc_form_deal_email,#form_handler_ncamc_form_Deal_name,#form_handler_ncamc_form_deal_adres];
+			RULE_END
+			RULE_BEGIN [NAME = "clientdep", ORDER = "2"]
+				IF ($login_profile.dealer_code == "URSS-RJ")
+				BEGIN 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_telep1] VALUE ['0141-2377822']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_telep2] VALUE ['2367884']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_telep3] VALUE ['2367890']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_fax] VALUE ['0141-2362559']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_email] VALUE ['cp@urssjpr.com']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_Deal_name] VALUE ['URSS TECHSERVICES PRIVATE LTD.']; 
+				APPLY [SetValue] ON [#form_handler_ncamc_form_deal_adres] VALUE ['B-2,JAYANTI MARKET,M.I.ROAD,JAIPUR - 302 001'];
+				END
+			RULE_END
+		FIELD_END
+	EVENT_END
+OBJECT_END
