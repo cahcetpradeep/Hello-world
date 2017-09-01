@@ -1,0 +1,8 @@
+﻿<table>
+    <book xmlns:bk='urn:samples' bk:ISBN='1-861001-57-5'>
+        <title>C Sharp</title>
+     </book>
+    <book>
+        <title>Java</title>
+    </book>
+</table>

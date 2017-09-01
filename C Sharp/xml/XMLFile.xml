@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<company>
+    <employee>
+        <id>10001</id>
+        <name>pradeep</name>
+        <city>chennai</city>
+    </employee>
+    <employee>
+        <id>10002</id>
+        <name>prabu</name>
+        <city>chennai</city>
+    </employee>
+    <employee>
+        <id>10003</id>
+        <name>prakash</name>
+        <city>chennai</city>
+    </employee>
+    <employee>
+        <id>10004</id>
+        <name>prabha</name>
+        <city>chennai</city>
+    </employee>
+    <employee>
+        <id>10005</id>
+        <name>priya</name>
+        <city>chennai</city>
+    </employee>
+    <employee>
+        <id>10006</id>
+        <name>prayanka</name>
+        <city>chennai</city>
+    </employee>
+</company>

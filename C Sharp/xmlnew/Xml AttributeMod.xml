@@ -1,0 +1,7 @@
+<table genre="novel">
+  <book xmlns:bk="urn:samples" bk:ISBN="1-861001-57-5">
+        " +
+        "<title>Pride And Prejudice</title>" +
+        "
+    </book>
+</table>

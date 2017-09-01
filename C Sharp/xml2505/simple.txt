@@ -1,0 +1,13 @@
+{
+	"context": {
+		"sessionId": "ce0a5d04-c90b-4765-8230-a8bf45810718",
+		"userId": "tamil2",
+		"client_id": "dev",
+		"locale_id": "en-us",
+		"country_code": "in",
+		"inputparam": {
+			"p_report_code": "report_mobile_call_metrics",
+			"p_inputparam_xml": "<inputparam><employee_id>SS005</employee_id><summary_by>call_type</summary_by></inputparam>"
+		}
+	}
+}
